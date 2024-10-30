@@ -2,6 +2,8 @@
 
 <p><img src="example/example1.jpg" alt="" /></p>
 
+<p><img src="example/example2.jpg" alt="" /></p>
+
 <p>Volevo condividere una scheda che ho creato con l'aiuto delle varie community per visualizzare data, ora e meteo interno ed esterno di casa.</p>
 
 <p dir="auto">Instructions:</p>
