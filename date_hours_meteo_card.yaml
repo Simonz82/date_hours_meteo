@@ -73,7 +73,7 @@ cards:
           icon: |
             [[[
               var weather = states['weather.forecast_home'].state;
-              return '<img src= "/local/ic/weather_icons/animated/ok/' + weather + '.svg" width="50" height="50">'
+              return '<img src= "/local/ic/weather_icons/animated/' + weather + '.svg" width="50" height="50">'
             ]]]
         styles:
           grid:
