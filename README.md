@@ -16,7 +16,7 @@ poi ...
 3. in HA create una card manuale e incollate il contenuto del file: date_hours_meteo_card.yaml
 4. Temperatura interna, modificare l'entità con la vostra alla riga 66 (io ho messo il sensore di temperatura del mio salone)
 5. Temperatura esterna, modificare l'entità con la vostra alla riga 69 e 75 se avete un altro servizio di meteo (io ho usato weather.forecast)
-6. per gli allineamenti e dimensioni dovete eventualmente modificare i parametri alle righe CARD, NAME, LABEL
+6. per gli allineamenti e dimensioni dovete eventualmente modificare i parametri alle righe CARD, NAME, LABEL per i 3 blocchi: data, ora e meteo
 
 
 <p>Enjoy!</p>
