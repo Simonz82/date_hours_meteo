@@ -14,7 +14,7 @@ da Hacs, installare:
 
 poi ...
 1. nella cartella packeges incollare il file sensor_time_e_date.yaml
-2. nella cartella www dovete andare ad incollare tutte le immagini del meteo come da percorso: www\ic\weather_icons\animated
+2. nella cartella www dovete andare ad incollare tutte le immagini del meteo come da percorso: www\weather_icons\
 3. in HA create una card manuale e incollate il contenuto del file: date_hours_meteo_card.yaml
 4. Temperatura interna, modificare l'entità con la vostra alla riga 66 (io ho messo il sensore di temperatura del mio salone)
 5. Temperatura esterna, modificare l'entità con la vostra alla riga 69 e 75 se avete un altro servizio di meteo (io ho usato weather.forecast)
