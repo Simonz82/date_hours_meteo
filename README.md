@@ -32,7 +32,7 @@ poi ...
 
 Make your Amazon purchases from this link:
 
-[![Amazon](https://github.com/Simonz82/desktop-tutorial/blob/main/Amazon_logo.jpg)](https://amzn.to/3XWWTgz)
+[![Amazon](https://github.com/Simonz82/desktop-tutorial/blob/main/Amazon_logo.png)](https://amzn.to/3XWWTgz)
 
 Join our Telegram channel dedicated to Home Assistant news:
 
