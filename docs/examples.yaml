@@ -1,0 +1,33 @@
+# 1) Minimal: only the clock and the date, no weather
+type: custom:shc-clock-strip-card
+show_weather: false
+show_season: false
+---
+# 2) Full strip with weather entity and indoor sensor
+type: custom:shc-clock-strip-card
+weather_entity: weather.home
+outdoor_entity: weather.home          # temperature attribute of the weather entity
+indoor_entity: sensor.living_room_temperature
+---
+# 3) Outdoor temperature from a real sensor, seconds shown
+type: custom:shc-clock-strip-card
+weather_entity: weather.home
+outdoor_entity: sensor.outdoor_temperature
+indoor_entity: sensor.living_room_temperature
+show_seconds: true
+---
+# 4) Season from your own sensor, custom images and icons, standard card background
+type: custom:shc-clock-strip-card
+weather_entity: weather.home
+outdoor_entity: weather.home
+season_entity: sensor.season
+season_images: /local/my_seasons/        # 01.png spring, 02.png summer, 03.png autumn, 04.png winter
+weather_icons: /local/weather_icons/     # sunny.svg, rainy.svg ...
+transparent: false
+---
+# 5) Inside a sections view, full width
+type: custom:shc-clock-strip-card
+weather_entity: weather.home
+outdoor_entity: weather.home
+grid_options:
+  columns: full

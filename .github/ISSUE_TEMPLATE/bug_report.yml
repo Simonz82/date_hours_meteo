@@ -1,0 +1,42 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report. Please fill in all fields, it helps to reproduce the problem. For questions use Discussions.
+  - type: input
+    id: version
+    attributes:
+      label: Card version
+      description: Shown in HACS, or in the browser console when the card loads.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: ha
+    attributes:
+      label: Home Assistant version and browser / device
+      placeholder: "2026.10.1, Chrome on Android tablet"
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: Card YAML
+      description: Paste your card configuration. Remove anything private.
+      render: yaml
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens, and what did you expect?
+      description: A screenshot helps a lot.
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Browser console errors (optional)
+      render: text
