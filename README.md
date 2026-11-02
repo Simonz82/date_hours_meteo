@@ -2,6 +2,8 @@
 
 [![HACS](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://hacs.xyz) [![Validate](https://github.com/Simonz82/date_hours_meteo/actions/workflows/validate.yml/badge.svg)](https://github.com/Simonz82/date_hours_meteo/actions/workflows/validate.yml)
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Simonz82&repository=date_hours_meteo&category=plugin)
+
 Una striscia unica per le dashboard di Home Assistant: **data | stagione + ora | meteo + temperature interna ed esterna**, sempre su una sola riga e proporzionale alla larghezza, perfetta per un tablet a muro, un telefono o la testata di una vista.
 
 *A single-row strip for Home Assistant dashboards: date | season + time | weather + indoor/outdoor temperature. English summary at the bottom.*
@@ -38,7 +40,11 @@ Solo ora (nessun meteo, data o stagione):
 
 ### Con HACS (consigliata)
 
-1. HACS > menu a tre puntini > **Repository personalizzati**.
+1. Clicca il pulsante qui sotto per aprire il repository in HACS (se non funziona, procedi a mano con i punti seguenti):
+
+   [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Simonz82&repository=date_hours_meteo&category=plugin)
+
+   A mano: HACS > menu a tre puntini > **Repository personalizzati**.
 2. Repository: `https://github.com/Simonz82/date_hours_meteo`, tipo **Dashboard** (Lovelace). Aggiungi.
 3. Cerca "Clock Strip Card", scarica, ricarica il browser (svuota la cache se serve).
 
@@ -159,7 +165,7 @@ Vedi [CHANGELOG.md](CHANGELOG.md). Ultima versione: **1.0.0**.
 
 **Clock Strip Card** is a Lovelace card for Home Assistant showing, on a single responsive row, the date, the season icon, the time, a weather icon and the indoor and outdoor temperatures. It scales with the card width (CSS container queries), has a visual editor, uses the Home Assistant language and time zone, and needs no other card.
 
-- **Install with HACS**: three-dot menu > Custom repositories > `https://github.com/Simonz82/date_hours_meteo` > type *Dashboard*, then download "Clock Strip Card". **Manual**: copy `shc-clock-strip-card.js` to `/config/www/` and add `/local/shc-clock-strip-card.js` as a JavaScript module resource.
+- **Install with HACS**: click the My Home Assistant button at the top of this page, or manually: three-dot menu > Custom repositories > `https://github.com/Simonz82/date_hours_meteo` > type *Dashboard*, then download "Clock Strip Card". **Manual**: copy `shc-clock-strip-card.js` to `/config/www/` and add `/local/shc-clock-strip-card.js` as a JavaScript module resource.
 - **Weather icons**: copy the SVGs from `www/ic/weather_icons/animated/` to `/config/www/weather_icons/` (otherwise built-in `mdi:` icons are used).
 - **Options** are listed in the table above (same names and defaults): `indoor_entity`, `outdoor_entity`, `weather_entity`, `season_entity`, `show_date`, `show_seconds`, `show_season`, `show_weather`, `transparent`, `season_images`, `weather_icons`.
 - The original **button-card + layout-card** version is kept in this repository (see "Versione classica").
